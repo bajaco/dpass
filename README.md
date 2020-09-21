@@ -2,7 +2,7 @@
 
 Quick and dirty password manager.
 
-##Usage
+### Usage
 
 Set the FILES_DIR in pass.py.
 Upon running the program you are presented with a blank input screen. 
