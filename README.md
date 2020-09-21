@@ -1,4 +1,4 @@
-# Dpass
+# dpass
 
 Quick and dirty password manager.
 
