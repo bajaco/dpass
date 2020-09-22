@@ -3,6 +3,7 @@ import pyperclip
 import sqlite3
 import random
 import string
+import sys
 
 FILES_DIR=''
 
@@ -36,7 +37,11 @@ f = Fernet(key)
 conn = sqlite3.connect(FILES_DIR + '/pass.db')
 create_table(conn)
 c = conn.cursor()
-site = input()
+site = None
+if len(sys.argv) == 2:
+    site = sys.argv[1]
+else:
+    site = input()
 c.execute('SELECT * FROM login WHERE site=?', (site,))
 res = c.fetchall()
 if len(res) == 0:
