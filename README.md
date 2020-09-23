@@ -4,7 +4,7 @@ Quick and dirty password manager.
 
 ### Usage
 
-1. Set the FILES_DIR in pass.py.
+1. Set the FILES_DIR in pass.py. Example: `/home/myname/dpass`
 2. Set the KEY_DIR in pass.py.
 3. Run the python script with the site name as an argument or without Example: `python pass.py github` or `python pass.py`
 4. If run without command line argument enter the site name now.
