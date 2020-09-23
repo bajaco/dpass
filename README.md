@@ -14,4 +14,13 @@ Quick and dirty password manager.
 The strings are encrypted, which serves no purpose as the key is in the same directory, but may be useful if the KEY_DIR is set to an external drive such as `/mnt/usb`.
 I made this simply because I have a bad habit of reusing passwords which I am trying to break, and this is marginally better than writing them down.
 
-Use at your own risk!
+### Suggestions
+
+I find this tool very useful if aliased. This is how I set it up on my system:
+1. Create virtual environment: `python -m venv venv`
+2. Activate: `source venv/bin/active`
+3. Install requirements: `pip install -r requirements.txt`
+4. Add alias to your ~/.bashrc file. For instance, on my system: `alias dpass='/home/user/dev/pass/venv/bin/python /home/user/dev/pass/pass.py'`
+5. Load/generate passwords! Example: `dpass github`
+
+## Use at your own risk!
